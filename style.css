@@ -10,7 +10,10 @@ p,a,#boton{
 
 a{
     color: gray;
+
 }
+
+
 
 #barra {
     display: grid;
@@ -270,3 +273,6 @@ box-shadow: 4px 6px 8px -2px rgba(168,168,168,1);
     padding-right: 15px;
 }
 
+a:hover{
+    text-decoration: underline;
+}
