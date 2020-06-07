@@ -1,0 +1,189 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+#barra {
+    display: grid;
+    grid-template-columns: 1fr 50px 70px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: ". gmail imagenes menugrid usuario";
+    
+}
+
+#gmail {
+    grid-area: gmail;
+    align-self: center;
+    justify-self: center;
+    
+    
+}
+
+#imagenes {
+    grid-area: imagenes;
+    align-self: center;
+    justify-self: center;
+   
+    
+    
+}
+
+#menugrid {
+    grid-area: menugrid;
+    height: 15px;
+    align-self: center;
+    justify-self: center;
+    
+    
+    
+    
+}
+
+#usuario {
+    grid-area: usuario;
+    align-self: center;
+    justify-self: center;
+    
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+#logouser {
+    color: beige;
+    background-color: darkcyan;
+    padding: 7px;
+    border-radius: 50%;
+    
+    font-weight: bold;
+
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 50px 50px 200px;
+    grid-template-areas: 
+    ". logomain ."
+    ". input ."
+    ". botones ."
+    ". ofrecido .";
+   
+}
+
+#logomain{
+    grid-area: logomain;
+    align-self: flex-end;
+    justify-self: center;
+   
+    
+}
+#input{
+    grid-area: input;
+    align-self: center;
+    justify-self: center;
+    border-width: 5px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    width: 400px;
+    border-radius: 15px;
+    
+    
+}
+#botones{
+    display: flex;
+    align-self: center;
+    grid-area: botones;
+    justify-self: center;
+    
+}
+#ofrecido{
+    grid-area: ofrecido;
+    align-self: flex-start;
+    justify-self: center;
+    
+}
+
+#footer {
+    margin-top: auto;
+    background-color: rgb(231, 231, 231);
+    padding-bottom: 15px;
+    border: rgb(219, 219, 219) solid 1px;
+    display: grid;
+    grid-template-columns: auto auto auto auto  1fr auto auto auto auto;
+    grid-template-rows: auto;
+    margin-top: 115px;
+    grid-template-areas: 
+    "italia publicidad empresa sobre funciona . privacidad terminos configuracion"
+    ;
+    
+}
+
+#italia {
+    grid-template-areas: italia;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    border: rgb(219, 219, 219) solid 1px;
+}
+
+
+#publicidad {
+    grid-template-areas: publicidad;
+    align-self: flex-end;
+    justify-self: center;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+#empresa {
+    grid-template-areas: empresa;
+    align-self: center;
+    justify-self: center;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+#sobre {
+    grid-template-areas: sobre;
+    align-self: center;
+    justify-self: center;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+#privacidad {
+    grid-template-areas: privacidad;
+    align-self: center;
+    justify-self: end;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+#funciona{
+    grid-template-areas: funciona;
+    align-self: center;
+    justify-self: center;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+#terminos {
+    grid-template-areas: terminos;
+    align-self: center;
+    justify-self: center;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+#configuracion{
+    grid-template-areas: configuracion;
+    align-self: center;
+    justify-self: center;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
