@@ -162,17 +162,19 @@ box-shadow: 4px 6px 8px -2px rgba(168,168,168,1);
 }
 
 #boton {
-    border: 0;
+    border: transparent solid 1px;
     padding: 10px;
     margin: 8px;
     border-radius: 3px;
     color: rgb(61, 61, 61);
     font-size: 15px;
     
+    
 }
 
 #boton:hover{
     border: solid 1px rgb(167, 167, 167);
+    
 }
 
 #ofrecido{
