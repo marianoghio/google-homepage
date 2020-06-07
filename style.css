@@ -3,6 +3,15 @@ html{
     height: 100%;
 }
 
+p,a,#boton{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+a{
+    color: gray;
+}
+
 #barra {
     display: grid;
     grid-template-columns: 1fr 50px 70px 50px 50px;
@@ -15,6 +24,8 @@ html{
     grid-area: gmail;
     align-self: center;
     justify-self: center;
+    color: rgb(53, 53, 53);
+    font-size: 15px;
     
     
 }
@@ -23,6 +34,8 @@ html{
     grid-area: imagenes;
     align-self: center;
     justify-self: center;
+    color: rgb(53, 53, 53);
+    font-size: 15px;
    
     
     
@@ -51,10 +64,12 @@ a:link, a:visited, a:active {
 }
 
 
-#logouser {
+#usuario {
     color: beige;
     background-color: darkcyan;
     padding: 7px;
+    padding-left: 9px;
+    padding-right: 9px;
     border-radius: 50%;
     
     font-weight: bold;
@@ -84,33 +99,99 @@ a:link, a:visited, a:active {
     grid-area: input;
     align-self: center;
     justify-self: center;
-    border-width: 5px;
     padding-left: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-right: 50px;
-    width: 400px;
-    border-radius: 15px;
+    width: 450px;
+    border-radius: 20px;
+    border: 1px solid rgb(212, 212, 212);
+    margin-top: 30px;
     
     
-}
-#botones{
-    display: flex;
-    align-self: center;
-    grid-area: botones;
-    justify-self: center;
-    
-}
-#ofrecido{
-    grid-area: ofrecido;
-    align-self: flex-start;
-    justify-self: center;
     
 }
 
+#inputfield{
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+}
+
+#input:hover{
+    -webkit-box-shadow: 4px 6px 8px -2px rgba(168,168,168,1);
+    -moz-box-shadow: 4px 6px 8px -2px rgba(168,168,168,1);
+    box-shadow: 4px 6px 8px -2px rgba(168,168,168,1);
+}
+
+#input:focus{
+    -webkit-box-shadow: 4px 6px 8px -2px rgba(168,168,168,1);
+-moz-box-shadow: 4px 6px 8px -2px rgba(168,168,168,1);
+box-shadow: 4px 6px 8px -2px rgba(168,168,168,1);
+}
+
+#lupa{
+    display: inline-flex;
+    float: left;
+    margin-left: -30px;
+    margin-top: 2px;
+    width: 15px;
+    height: 15px;
+}
+
+#micro{
+    display: inline-flex;
+    float: right;
+    margin-right: -30px;
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+#botones{
+    margin-top: 50px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-self: center;
+    grid-area: botones;
+    justify-self: center;
+    gap: 5px;
+    
+}
+
+#boton {
+    border: 0;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 3px;
+    color: rgb(61, 61, 61);
+    font-size: 15px;
+    
+}
+
+#boton:hover{
+    border: solid 1px rgb(167, 167, 167);
+}
+
+#ofrecido{
+    margin-top: 15px;
+    grid-area: ofrecido;
+    align-self: flex-start;
+    justify-self: center;
+    margin-top: 25px;
+    font-size: 15px;
+    
+}
+
+#ofrecido>p>a{
+    color: blue;
+}
+
 #footer {
-    margin-top: auto;
     background-color: rgb(231, 231, 231);
+    font-size: 15px;
     padding-bottom: 15px;
     border: rgb(219, 219, 219) solid 1px;
     display: grid;
